@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Imanshu",
+    "email": "imanshupatel@gmail.com",
+    "password": "123456",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Jenish",
+    "email": "jenish21@gmail.com",
+    "password": "123456",
+    "role": "admin"
+  },
+  {
+    "id": 3,
+    "name": "Zeel",
+    "email": "zeelpipaliya@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "name": "Anjali",
+    "email": "anjalijoshi@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "name": "Tejas",
+    "email": "tejasginoya@gamil.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "name": "Karan",
+    "email": "karanrana@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 7,
+    "name": "Dhruv",
+    "email": "dhruv45@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 8,
+    "name": "Ajay",
+    "email": "ajay03@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 9,
+    "name": "Sagar",
+    "email": "sagar22@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 10,
+    "name": "Govind",
+    "email": "govind03@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 11,
+    "name": "Jonathan",
+    "email": "jonathan@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 12,
+    "name": "Tanmay",
+    "email": "tanmay56@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 13,
+    "name": "Mayur",
+    "email": "mayur67@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 14,
+    "name": "Ravi",
+    "email": "ravi01@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 15,
+    "name": "Niral",
+    "email": "niral32@gmail.com",
+    "password": "123456",
+    "role": "user"
+  },
+  {
+    "id": 16,
+    "name": "Kabir",
+    "email": "kabir001@gmail.com",
+    "password": "123456",
+    "role": "user"
+  }
+]

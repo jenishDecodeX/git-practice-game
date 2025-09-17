@@ -1,0 +1,187 @@
+.loginCnt {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #0f0f0f, #000);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    /* ✅ breathing room on small screens */
+}
+
+.flipContainer {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 380px;
+    /* ✅ responsive card size */
+}
+
+.flipper {
+    transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* ✅ adaptive height */
+    min-height: 460px;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.glassCard {
+    background: rgba(20, 20, 20, 0.75);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(12px) saturate(150%);
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    min-height: 100%;
+    animation: float 6s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: cyan;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.input:focus {
+    border-color: cyan;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+}
+
+.button {
+    background: linear-gradient(90deg, #00bcd4, #0097a7);
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #26c6da, #00acc1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
+.linkText {
+    text-align: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.linkText span {
+    color: cyan;
+    font-weight: 500;
+}
+
+.linkText:hover span {
+    text-decoration: underline;
+}
+
+.error {
+    font-size: 0.9rem;
+    color: #ff6b6b;
+    text-align: center;
+}
+
+/* 🌍 Responsive Design */
+@media (max-width: 768px) {
+    .glassCard {
+        padding: 1.5rem;
+        border-radius: 14px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .input,
+    .button {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flipContainer {
+        max-width: 100%;
+    }
+
+    .glassCard {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .input,
+    .button {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .linkText {
+        font-size: 0.8rem;
+    }
+}
