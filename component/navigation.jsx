@@ -44,7 +44,7 @@ export default function Navigation() {
             {/* Desktop Menu */}
             <nav className="hidden md:flex">
                 <ul className="flex gap-6 text-lg items-center">
-                    <li><Link href="/Home">Home</Link></li>
+                    <li><Link href="/">Home</Link></li>
 
                     {isLoggedIn ? (
                         <>
